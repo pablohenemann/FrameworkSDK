@@ -56,9 +56,9 @@
 		DA0F8C5B1E5780A300E43B22 = {
 			isa = PBXGroup;
 			children = (
+				DA0F8C661E5780A300E43B22 /* Products */,
 				DA0F8C671E5780A300E43B22 /* Sources */,
 				DA0F8C721E5780A300E43B22 /* Tests */,
-				DA0F8C661E5780A300E43B22 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,22 +74,22 @@
 		DA0F8C671E5780A300E43B22 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DA0F8C811E578B7100E43B22 /* Document.swift */,
 				DA0F8C681E5780A300E43B22 /* FrameworkSDK.h */,
 				DA0F8C691E5780A300E43B22 /* Info.plist */,
-				DA0F8C811E578B7100E43B22 /* Document.swift */,
 			);
 			name = Sources;
-			path = FrameworkSDK;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		DA0F8C721E5780A300E43B22 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DA0F8C751E5780A300E43B22 /* Info.plist */,
 				DA0F8C7F1E57826E00E43B22 /* DocumentTests.swift */,
+				DA0F8C751E5780A300E43B22 /* Info.plist */,
 			);
 			name = Tests;
-			path = FrameworkSDKTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,7 +338,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FrameworkSDK/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Totvs.FrameworkSDK;
@@ -359,7 +359,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FrameworkSDK/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Totvs.FrameworkSDK;
@@ -374,7 +374,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 53Y49Z97XN;
-				INFOPLIST_FILE = FrameworkSDKTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Totvs.FrameworkSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,7 +387,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 53Y49Z97XN;
-				INFOPLIST_FILE = FrameworkSDKTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Totvs.FrameworkSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
